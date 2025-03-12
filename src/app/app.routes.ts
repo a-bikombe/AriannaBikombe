@@ -5,18 +5,12 @@ import { ProjectsComponent } from './projects/projects.component';
 
 export const routes: Routes = [
     {
-        path: '',
-        component: AppComponent,
+        path: 'projects',
+        component: ProjectsComponent,
         children: [
             {
-                path: 'projects',
-                component: ProjectsComponent,
-                /* children: [
-                    {
-                        path: '/moodbored',
-                        component: MoodboredComponent,
-                    },
-                ], */
+                path: '/moodbored',
+                component: MoodboredComponent,
             },
         ],
     },
