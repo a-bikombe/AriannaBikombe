@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
@@ -10,7 +10,7 @@ import { StatsComponent } from './stats/stats.component';
     selector: 'moodbored-component',
     imports: [MoodsComponent, StatsComponent, JournalComponent, MatCardModule, MatListModule, MatButtonModule],
     templateUrl: './moodbored.component.html',
-    styleUrl: './moodbored.component.scss'
+    styleUrl: './moodbored.component.scss',
 })
 export class MoodboredComponent {
     entries = [

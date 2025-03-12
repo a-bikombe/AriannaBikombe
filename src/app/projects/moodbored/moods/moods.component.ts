@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
@@ -9,8 +9,7 @@ import { MoodStepper } from "./mood-stepper/mood-stepper.component";
     selector: 'moods',
     imports: [MatCardModule, MatListModule, MatButtonModule, MatDialogModule],
     templateUrl: './moods.component.html',
-    styleUrl: './moods.component.scss',
-    changeDetection: ChangeDetectionStrategy.OnPush,
+    styleUrl: './moods.component.scss'
 })
 export class MoodsComponent {
     moods = [
@@ -35,8 +34,7 @@ export class MoodsComponent {
 @Component({
     selector: 'new-mood',
     templateUrl: './new-mood-dialog.html',
-    imports: [MatDialogModule, MatButtonModule, MoodStepper],
-    changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [MatDialogModule, MatButtonModule, MoodStepper]
 })
 export class NewMoodDialog { }
 

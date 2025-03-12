@@ -9,7 +9,7 @@ export const routes: Routes = [
         component: ProjectsComponent,
         children: [
             {
-                path: '/moodbored',
+                path: 'moodbored',
                 component: MoodboredComponent,
             },
         ],
