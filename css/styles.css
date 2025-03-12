@@ -1,0 +1,18 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: hsl(324, 100%, 90%);
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+
+mat-card-header {
+  font-weight: bold;
+}
+mat-card-header.center {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=styles.css.map */
